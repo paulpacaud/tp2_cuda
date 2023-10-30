@@ -1,0 +1,1680 @@
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 2.200026 (s)
+	   - Gflops = 62.471508 
+	 Kernel computation:
+	   - Elapsed time = 2.168020 (s)
+	   - Gflops = 63.393749 
+	 Data transfers:
+	   - Elapsed time = 0.032006 (s)
+	   - BW           = 6.290358 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 2.380066 (s)
+	   - Gflops = 57.745865 
+	 Kernel computation:
+	   - Elapsed time = 2.348071 (s)
+	   - Gflops = 58.532707 
+	 Data transfers:
+	   - Elapsed time = 0.031995 (s)
+	   - BW           = 6.292507 (GB/s)
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 15.054699 (s)
+	   - Gflops = 9.129306 
+	 Kernel computation:
+	   - Elapsed time = 15.022420 (s)
+	   - Gflops = 9.148922 
+	 Data transfers:
+	   - Elapsed time = 0.032278 (s)
+	   - BW           = 6.237174 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 9.287183 (s)
+	   - Gflops = 14.798777 
+	 Kernel computation:
+	   - Elapsed time = 9.255180 (s)
+	   - Gflops = 14.849949 
+	 Data transfers:
+	   - Elapsed time = 0.032003 (s)
+	   - BW           = 6.290843 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 3.422602 (s)
+	   - Gflops = 40.156277 
+	 Kernel computation:
+	   - Elapsed time = 3.390519 (s)
+	   - Gflops = 40.536255 
+	 Data transfers:
+	   - Elapsed time = 0.032083 (s)
+	   - BW           = 6.275272 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 5.333553 (s)
+	   - Gflops = 25.768744 
+	 Kernel computation:
+	   - Elapsed time = 5.301622 (s)
+	   - Gflops = 25.923943 
+	 Data transfers:
+	   - Elapsed time = 0.031930 (s)
+	   - BW           = 6.305173 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 4.912583 (s)
+	   - Gflops = 27.976925 
+	 Kernel computation:
+	   - Elapsed time = 4.880614 (s)
+	   - Gflops = 28.160179 
+	 Data transfers:
+	   - Elapsed time = 0.031969 (s)
+	   - BW           = 6.297571 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 2.796273 (s)
+	   - Gflops = 49.150768 
+	 Kernel computation:
+	   - Elapsed time = 2.764343 (s)
+	   - Gflops = 49.718487 
+	 Data transfers:
+	   - Elapsed time = 0.031930 (s)
+	   - BW           = 6.305334 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 6.478075 (s)
+	   - Gflops = 21.216017 
+	 Kernel computation:
+	   - Elapsed time = 6.446135 (s)
+	   - Gflops = 21.321142 
+	 Data transfers:
+	   - Elapsed time = 0.031940 (s)
+	   - BW           = 6.303206 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 2.718150 (s)
+	   - Gflops = 50.563427 
+	 Kernel computation:
+	   - Elapsed time = 2.686222 (s)
+	   - Gflops = 51.164402 
+	 Data transfers:
+	   - Elapsed time = 0.031927 (s)
+	   - BW           = 6.305766 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.082739 (s)
+	   - Gflops = 126.936333 
+	 Kernel computation:
+	   - Elapsed time = 1.050741 (s)
+	   - Gflops = 130.801971 
+	 Data transfers:
+	   - Elapsed time = 0.031999 (s)
+	   - BW           = 6.291722 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.058584 (s)
+	   - Gflops = 129.832855 
+	 Kernel computation:
+	   - Elapsed time = 1.026588 (s)
+	   - Gflops = 133.879379 
+	 Data transfers:
+	   - Elapsed time = 0.031996 (s)
+	   - BW           = 6.292256 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 3.296244 (s)
+	   - Gflops = 41.695621 
+	 Kernel computation:
+	   - Elapsed time = 3.264189 (s)
+	   - Gflops = 42.105091 
+	 Data transfers:
+	   - Elapsed time = 0.032056 (s)
+	   - BW           = 6.280509 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.018171 (s)
+	   - Gflops = 134.986160 
+	 Kernel computation:
+	   - Elapsed time = 0.986082 (s)
+	   - Gflops = 139.378891 
+	 Data transfers:
+	   - Elapsed time = 0.032089 (s)
+	   - BW           = 6.273978 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.940353 (s)
+	   - Gflops = 146.156723 
+	 Kernel computation:
+	   - Elapsed time = 0.908348 (s)
+	   - Gflops = 151.306442 
+	 Data transfers:
+	   - Elapsed time = 0.032005 (s)
+	   - BW           = 6.290485 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.853058 (s)
+	   - Gflops = 161.113235 
+	 Kernel computation:
+	   - Elapsed time = 0.821015 (s)
+	   - Gflops = 167.401169 
+	 Data transfers:
+	   - Elapsed time = 0.032043 (s)
+	   - BW           = 6.283084 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.628610 (s)
+	   - Gflops = 218.639618 
+	 Kernel computation:
+	   - Elapsed time = 0.596686 (s)
+	   - Gflops = 230.337250 
+	 Data transfers:
+	   - Elapsed time = 0.031924 (s)
+	   - BW           = 6.306466 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.116876 (s)
+	   - Gflops = 123.056580 
+	 Kernel computation:
+	   - Elapsed time = 1.084871 (s)
+	   - Gflops = 126.686928 
+	 Data transfers:
+	   - Elapsed time = 0.032005 (s)
+	   - BW           = 6.290416 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.965411 (s)
+	   - Gflops = 142.363159 
+	 Kernel computation:
+	   - Elapsed time = 0.933073 (s)
+	   - Gflops = 147.297150 
+	 Data transfers:
+	   - Elapsed time = 0.032338 (s)
+	   - BW           = 6.225663 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.849619 (s)
+	   - Gflops = 161.765335 
+	 Kernel computation:
+	   - Elapsed time = 0.817541 (s)
+	   - Gflops = 168.112640 
+	 Data transfers:
+	   - Elapsed time = 0.032078 (s)
+	   - BW           = 6.276072 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.653800 (s)
+	   - Gflops = 210.215744 
+	 Kernel computation:
+	   - Elapsed time = 0.621690 (s)
+	   - Gflops = 221.073212 
+	 Data transfers:
+	   - Elapsed time = 0.032110 (s)
+	   - BW           = 6.269952 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.141972 (s)
+	   - Gflops = 120.352272 
+	 Kernel computation:
+	   - Elapsed time = 1.110101 (s)
+	   - Gflops = 123.807594 
+	 Data transfers:
+	   - Elapsed time = 0.031871 (s)
+	   - BW           = 6.316913 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.469286 (s)
+	   - Gflops = 292.868256 
+	 Kernel computation:
+	   - Elapsed time = 0.437315 (s)
+	   - Gflops = 314.279419 
+	 Data transfers:
+	   - Elapsed time = 0.031971 (s)
+	   - BW           = 6.297081 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.167795 (s)
+	   - Gflops = 117.690948 
+	 Kernel computation:
+	   - Elapsed time = 1.135833 (s)
+	   - Gflops = 121.002831 
+	 Data transfers:
+	   - Elapsed time = 0.031963 (s)
+	   - BW           = 6.298767 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.055334 (s)
+	   - Gflops = 130.232620 
+	 Kernel computation:
+	   - Elapsed time = 1.023417 (s)
+	   - Gflops = 134.294250 
+	 Data transfers:
+	   - Elapsed time = 0.031918 (s)
+	   - BW           = 6.307648 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.953014 (s)
+	   - Gflops = 144.215012 
+	 Kernel computation:
+	   - Elapsed time = 0.920456 (s)
+	   - Gflops = 149.316208 
+	 Data transfers:
+	   - Elapsed time = 0.032558 (s)
+	   - BW           = 6.183540 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.752263 (s)
+	   - Gflops = 182.700546 
+	 Kernel computation:
+	   - Elapsed time = 0.720334 (s)
+	   - Gflops = 190.798843 
+	 Data transfers:
+	   - Elapsed time = 0.031929 (s)
+	   - BW           = 6.305414 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.708837 (s)
+	   - Gflops = 193.893494 
+	 Kernel computation:
+	   - Elapsed time = 0.676651 (s)
+	   - Gflops = 203.116562 
+	 Data transfers:
+	   - Elapsed time = 0.032187 (s)
+	   - BW           = 6.254963 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.032110 (s)
+	   - Gflops = 4280.241699 
+	 Kernel computation:
+	   - Elapsed time = -0.000014 (s)
+	   - Gflops = -10014495.000000 
+	 Data transfers:
+	   - Elapsed time = 0.032124 (s)
+	   - BW           = 6.267207 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.032089 (s)
+	   - Gflops = 4283.047363 
+	 Kernel computation:
+	   - Elapsed time = -0.000078 (s)
+	   - Gflops = -1761270.125000 
+	 Data transfers:
+	   - Elapsed time = 0.032167 (s)
+	   - BW           = 6.258775 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.150066 (s)
+	   - Gflops = 119.505318 
+	 Kernel computation:
+	   - Elapsed time = 1.118165 (s)
+	   - Gflops = 122.914696 
+	 Data transfers:
+	   - Elapsed time = 0.031900 (s)
+	   - BW           = 6.311124 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.281658 (s)
+	   - Gflops = 107.235237 
+	 Kernel computation:
+	   - Elapsed time = 1.249732 (s)
+	   - Gflops = 109.974693 
+	 Data transfers:
+	   - Elapsed time = 0.031926 (s)
+	   - BW           = 6.306047 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.742945 (s)
+	   - Gflops = 184.992050 
+	 Kernel computation:
+	   - Elapsed time = 0.710811 (s)
+	   - Gflops = 193.355072 
+	 Data transfers:
+	   - Elapsed time = 0.032134 (s)
+	   - BW           = 6.265218 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.229315 (s)
+	   - Gflops = 111.801292 
+	 Kernel computation:
+	   - Elapsed time = 1.197104 (s)
+	   - Gflops = 114.809570 
+	 Data transfers:
+	   - Elapsed time = 0.032211 (s)
+	   - BW           = 6.250262 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031953 (s)
+	   - Gflops = 4301.246582 
+	 Kernel computation:
+	   - Elapsed time = 0.000004 (s)
+	   - Gflops = 36263584.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031949 (s)
+	   - BW           = 6.301402 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.032938 (s)
+	   - Gflops = 4172.621582 
+	 Kernel computation:
+	   - Elapsed time = 0.000572 (s)
+	   - Gflops = 240146.062500 
+	 Data transfers:
+	   - Elapsed time = 0.032366 (s)
+	   - BW           = 6.220319 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031949 (s)
+	   - Gflops = 4301.848145 
+	 Kernel computation:
+	   - Elapsed time = 0.000012 (s)
+	   - Gflops = 11753951.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031937 (s)
+	   - BW           = 6.303843 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031979 (s)
+	   - Gflops = 4297.852539 
+	 Kernel computation:
+	   - Elapsed time = -0.000079 (s)
+	   - Gflops = -1731427.125000 
+	 Data transfers:
+	   - Elapsed time = 0.032058 (s)
+	   - BW           = 6.280093 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.263020 (s)
+	   - Gflops = 108.817726 
+	 Kernel computation:
+	   - Elapsed time = 1.230841 (s)
+	   - Gflops = 111.662674 
+	 Data transfers:
+	   - Elapsed time = 0.032179 (s)
+	   - BW           = 6.256393 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.928929 (s)
+	   - Gflops = 147.954239 
+	 Kernel computation:
+	   - Elapsed time = 0.896975 (s)
+	   - Gflops = 153.224976 
+	 Data transfers:
+	   - Elapsed time = 0.031954 (s)
+	   - BW           = 6.300527 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.050019 (s)
+	   - Gflops = 130.891846 
+	 Kernel computation:
+	   - Elapsed time = 1.017941 (s)
+	   - Gflops = 135.016647 
+	 Data transfers:
+	   - Elapsed time = 0.032078 (s)
+	   - BW           = 6.276077 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031926 (s)
+	   - Gflops = 4304.886719 
+	 Kernel computation:
+	   - Elapsed time = 0.000008 (s)
+	   - Gflops = 16447931.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031918 (s)
+	   - BW           = 6.307638 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031887 (s)
+	   - Gflops = 4310.213867 
+	 Kernel computation:
+	   - Elapsed time = 0.000007 (s)
+	   - Gflops = 20947860.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031880 (s)
+	   - BW           = 6.315089 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.032174 (s)
+	   - Gflops = 4271.694336 
+	 Kernel computation:
+	   - Elapsed time = 0.000069 (s)
+	   - Gflops = 1978677.750000 
+	 Data transfers:
+	   - Elapsed time = 0.032105 (s)
+	   - BW           = 6.270903 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.032094 (s)
+	   - Gflops = 4282.380371 
+	 Kernel computation:
+	   - Elapsed time = 0.000031 (s)
+	   - Gflops = 4442256.000000 
+	 Data transfers:
+	   - Elapsed time = 0.032063 (s)
+	   - BW           = 6.279071 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031882 (s)
+	   - Gflops = 4310.895996 
+	 Kernel computation:
+	   - Elapsed time = 0.000005 (s)
+	   - Gflops = 29787380.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031877 (s)
+	   - BW           = 6.315703 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031927 (s)
+	   - Gflops = 4304.823242 
+	 Kernel computation:
+	   - Elapsed time = 0.000005 (s)
+	   - Gflops = 27743030.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031922 (s)
+	   - BW           = 6.306872 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.132069 (s)
+	   - Gflops = 121.405144 
+	 Kernel computation:
+	   - Elapsed time = 1.100101 (s)
+	   - Gflops = 124.932991 
+	 Data transfers:
+	   - Elapsed time = 0.031967 (s)
+	   - BW           = 6.297906 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.289275 (s)
+	   - Gflops = 106.601723 
+	 Kernel computation:
+	   - Elapsed time = 1.257159 (s)
+	   - Gflops = 109.325050 
+	 Data transfers:
+	   - Elapsed time = 0.032116 (s)
+	   - BW           = 6.268663 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031971 (s)
+	   - Gflops = 4298.901855 
+	 Kernel computation:
+	   - Elapsed time = 0.000019 (s)
+	   - Gflops = 7210102.500000 
+	 Data transfers:
+	   - Elapsed time = 0.031952 (s)
+	   - BW           = 6.300977 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031884 (s)
+	   - Gflops = 4310.631836 
+	 Kernel computation:
+	   - Elapsed time = 0.000002 (s)
+	   - Gflops = 63190424.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031882 (s)
+	   - BW           = 6.314833 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031854 (s)
+	   - Gflops = 4314.604980 
+	 Kernel computation:
+	   - Elapsed time = 0.000005 (s)
+	   - Gflops = 30100540.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031850 (s)
+	   - BW           = 6.321128 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031853 (s)
+	   - Gflops = 4314.819824 
+	 Kernel computation:
+	   - Elapsed time = -0.000017 (s)
+	   - Gflops = -8220524.500000 
+	 Data transfers:
+	   - Elapsed time = 0.031869 (s)
+	   - BW           = 6.317221 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031933 (s)
+	   - Gflops = 4303.994141 
+	 Kernel computation:
+	   - Elapsed time = -0.000037 (s)
+	   - Gflops = -3734754.250000 
+	 Data transfers:
+	   - Elapsed time = 0.031970 (s)
+	   - BW           = 6.297421 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031855 (s)
+	   - Gflops = 4314.490234 
+	 Kernel computation:
+	   - Elapsed time = 0.000004 (s)
+	   - Gflops = 32014688.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031851 (s)
+	   - BW           = 6.320906 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031874 (s)
+	   - Gflops = 4311.878418 
+	 Kernel computation:
+	   - Elapsed time = 0.000006 (s)
+	   - Gflops = 24291094.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031869 (s)
+	   - BW           = 6.317349 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031909 (s)
+	   - Gflops = 4307.235352 
+	 Kernel computation:
+	   - Elapsed time = -0.000036 (s)
+	   - Gflops = -3810550.750000 
+	 Data transfers:
+	   - Elapsed time = 0.031945 (s)
+	   - BW           = 6.302303 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 18758.142578
+	 C[2048][2048] = 288178912.000000
+	 C[4095][0] = 576198208.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 1.136952 (s)
+	   - Gflops = 120.883644 
+	 Kernel computation:
+	   - Elapsed time = 1.105081 (s)
+	   - Gflops = 124.370056 
+	 Data transfers:
+	   - Elapsed time = 0.031872 (s)
+	   - BW           = 6.316774 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+The results are correct for floats with a precision of 1.00000e-04.
+Maximum relative difference encountered: 2.59134e-05.
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031860 (s)
+	   - Gflops = 4313.833496 
+	 Kernel computation:
+	   - Elapsed time = 0.000004 (s)
+	   - Gflops = 34248432.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031856 (s)
+	   - BW           = 6.319889 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031908 (s)
+	   - Gflops = 4307.285156 
+	 Kernel computation:
+	   - Elapsed time = -0.000080 (s)
+	   - Gflops = -1712976.500000 
+	 Data transfers:
+	   - Elapsed time = 0.031989 (s)
+	   - BW           = 6.293674 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.032163 (s)
+	   - Gflops = 4273.234863 
+	 Kernel computation:
+	   - Elapsed time = 0.000006 (s)
+	   - Gflops = 23342208.000000 
+	 Data transfers:
+	   - Elapsed time = 0.032157 (s)
+	   - BW           = 6.260767 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031893 (s)
+	   - Gflops = 4309.341309 
+	 Kernel computation:
+	   - Elapsed time = -0.000014 (s)
+	   - Gflops = -10084302.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031907 (s)
+	   - BW           = 6.309815 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.032263 (s)
+	   - Gflops = 4260.011719 
+	 Kernel computation:
+	   - Elapsed time = 0.000174 (s)
+	   - Gflops = 790487.812500 
+	 Data transfers:
+	   - Elapsed time = 0.032089 (s)
+	   - BW           = 6.274063 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031852 (s)
+	   - Gflops = 4314.950684 
+	 Kernel computation:
+	   - Elapsed time = 0.000004 (s)
+	   - Gflops = 37924676.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031848 (s)
+	   - BW           = 6.321447 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031855 (s)
+	   - Gflops = 4314.466797 
+	 Kernel computation:
+	   - Elapsed time = 0.000003 (s)
+	   - Gflops = 43192656.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031852 (s)
+	   - BW           = 6.320651 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031858 (s)
+	   - Gflops = 4314.094727 
+	 Kernel computation:
+	   - Elapsed time = 0.000003 (s)
+	   - Gflops = 42185104.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031855 (s)
+	   - BW           = 6.320121 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031905 (s)
+	   - Gflops = 4307.812500 
+	 Kernel computation:
+	   - Elapsed time = 0.000006 (s)
+	   - Gflops = 22545750.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031898 (s)
+	   - BW           = 6.311478 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
+* Product of two square matrices of floats of size 4096x4096 on GPU: *
+- GPU kernel Id: 1
+- Parallel computation starts...
+
+- Examples of results:
+	 C[0][4095] = 0.000000
+	 C[2048][2048] = 0.000000
+	 C[4095][0] = 0.000000
+
+- Performance:
+	 Complete Matrix Product:
+	   - Elapsed time = 0.031856 (s)
+	   - Gflops = 4314.332031 
+	 Kernel computation:
+	   - Elapsed time = 0.000004 (s)
+	   - Gflops = 36945896.000000 
+	 Data transfers:
+	   - Elapsed time = 0.031853 (s)
+	   - BW           = 6.320560 (GB/s)
+
+- Checking results (comparison with CPU BLAS):
+*** WARNING ***
+The results are incorrect for floats with a precision of 1.00000e-04.
+Number of cell with imprecise results: 16777216
+Cell C[0][0] contained the largest relative difference of 1.00000e+00
+Expected value: 18758.125000000000000
+Computed value: 0.000000000000000
