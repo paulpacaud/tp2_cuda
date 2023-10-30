@@ -86,11 +86,12 @@ void gpuFinalize(void)
 void gpuSetDataOnGPU(void)
 {
   // Set GPU_A symbol
-  //CHECK_CUDA_SUCCESS(cudaMemcpyToSymbol(...),
-  //                   "Transfer A-->GPU_A");
+  CHECK_CUDA_SUCCESS(cudaMemcpyToSymbol(GPU_A, &A, sizeof(A), 0, cudaMemcpyHostToDevice),
+                    "Transfer A-->GPU_A");
 
   // Set GPU_B symbol
-  // ...
+  CHECK_CUDA_SUCCESS(cudaMemcpyToSymbol(GPU_B, &B, sizeof(B), 0, cudaMemcpyHostToDevice),
+                    "Transfer B-->GPU_B");
 }
 
 
@@ -100,7 +101,8 @@ void gpuSetDataOnGPU(void)
 void gpuGetResultOnCPU(void)
 {
   // Get GPU_C symbol
-  // ...
+  CHECK_CUDA_SUCCESS(cudaMemcpyFromSymbol(&C, GPU_C, sizeof(C), 0, cudaMemcpyDeviceToHost),
+                    "Transfer C<--GPU_C");
 }
 
 
