@@ -9,7 +9,7 @@ GPUCC = /usr/local/cuda/bin/nvcc
 CUDA_TARGET_FLAGS = -arch=sm_61      #GTX 1080 on Cameron cluster
 #CUDA_TARGET_FLAGS = -arch=sm_75      #RTX 2080-Ti on Tx cluster
 
-CXXFLAGS = #-DDP
+CXXFLAGS = -DDP
 CXXFLAGS += -I/usr/local/cuda/include/ -I/usr/include/x86_64-linux-gnu/
 CC_CXXFLAGS = -Ofast -fopenmp 
 CUDA_CXXFLAGS = -O3 $(CUDA_TARGET_FLAGS)
