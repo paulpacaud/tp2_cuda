@@ -116,11 +116,14 @@ __global__ void MatrixProductKernel_v0(void)
   int col = blockIdx.x*BLOCK_SIZE_X_K0 + threadIdx.x;
   T_real res = 0.0;
 
-  // Matrix product computation
-  for (int k = 0; k < SIZE; k++) {
-    res += GPU_A[row][k] * GPU_B[k][col];
+  if (col < SIZE) {
+    // Matrix product computation
+    for (int k = 0; k < SIZE; k++) {
+      res += GPU_A[row][k] * GPU_B[k][col];
+    }
+    GPU_C[row][col] = res;
   }
-  GPU_C[row][col] = res;
+  
 }
 
 
@@ -134,12 +137,70 @@ __global__ void MatrixProductKernel_v1(void)
   int col = blockIdx.x*BLOCK_SIZE_X_K1 + threadIdx.x;
   T_real res = 0.0;
 
-  // Matrix product computation
-  for (int k = 0; k < SIZE; k++) {
-    res += GPU_A[row][k] * GPU_B[k][col];
+  if ((row < SIZE) && (col < SIZE)){
+    // Matrix product computation
+    for (int k = 0; k < SIZE; k++) {
+      res += GPU_A[row][k] * GPU_B[k][col];
+    }
+    GPU_C[row][col] = res;
   }
-  GPU_C[row][col] = res;
+  
 }
+
+
+/*-------------------------------------------------------------------------------*/
+/* Shared memory caching - 2D & matrix size is multiple of block                 */
+/*-------------------------------------------------------------------------------*/
+// __global__ void MatrixProductKernel_v2(void)
+// {
+//   // Index computations
+//   int nbSteps = gridDim.x;
+
+//   int row = blockIdx.y*BLOCK_SIZE_XY_K2 + threadIdx.y;
+//   int col = blockIdx.x*BLOCK_SIZE_XY_K2 + threadIdx.x;
+//   T_real res = 0.0;
+
+//   // Shared memory arrays
+//   __shared__ T_real shared_A_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
+//   __shared__ T_real shared_B_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
+//   __shared__ T_real shared_C_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
+
+//   shared_C_block[threadIdx.y][threadIdx.x] = 0.0;
+
+//   // Matrix product computation
+//   for (int step = 0; step < nbSteps; step++) {
+//     // RAM to shared memory
+//     shared_A_block[threadIdx.y][threadIdx.x] = GPU_A[row][step * BLOCK_SIZE_XY_K2 + threadIdx.x];
+//     shared_B_block[threadIdx.y][threadIdx.x] = GPU_B[step * BLOCK_SIZE_XY_K2 + threadIdx.y][col];
+
+//     __synchthreads();
+//     // Partial matrix product
+//     for (int k = 0; k < BLOCK_SIZE_XY_K2; k++) {
+//       shared_C_block[threadIdx.y][threadIdx.x] += shared_A_block[threadIdx.y][k] * shared_B_block[k][threadIdx.x];
+//     }
+//     __synchthreads();
+//   }
+
+//   GPU_C[row][col] = shared_C_block[threadIdx.y][threadIdx.x];
+// }
+
+
+/*-------------------------------------------------------------------------------*/
+/* Shared memory caching - 2D & generic matrix size                              */
+/*-------------------------------------------------------------------------------*/
+// __global__ void MatrixProductKernel_v3(void)
+// {
+//   // Index computations
+//   int row = blockIdx.y*BLOCK_SIZE_Y_K1 + threadIdx.y;
+//   int col = blockIdx.x*BLOCK_SIZE_X_K1 + threadIdx.x;
+//   T_real res = 0.0;
+
+//   // Matrix product computation
+//   for (int k = 0; k < SIZE; k++) {
+//     res += GPU_A[row][k] * GPU_B[k][col];
+//   }
+//   GPU_C[row][col] = res;
+// }
 
 
 /*-------------------------------------------------------------------------------*/
@@ -173,7 +234,7 @@ void gpuProduct(gkid_t kid)
    Db.x = BLOCK_SIZE_X_K0;
    Db.y = 1;
    Db.z = 1;
-   Dg.x = SIZE/BLOCK_SIZE_X_K0;
+   Dg.x = (SIZE - 1)/BLOCK_SIZE_X_K0 + 1;
    Dg.y = SIZE;
    Dg.z = 1;
    // - run the Grid of Blocs of threads
@@ -181,18 +242,27 @@ void gpuProduct(gkid_t kid)
    break;
 
  case GK1 : // kernel v1 : 2D kernel using only registers and cache with generic matrix size
-      // - init the grid of blocs
+   // - init the grid of blocs
    Db.x = BLOCK_SIZE_X_K1;
    Db.y = BLOCK_SIZE_Y_K1;
    Db.z = 1;
-   Dg.x = SIZE/BLOCK_SIZE_X_K1;
-   Dg.y = SIZE/BLOCK_SIZE_Y_K1;
+   Dg.x = (SIZE -1)/BLOCK_SIZE_X_K1 +1;
+   Dg.y = (SIZE -1)/BLOCK_SIZE_Y_K1 +1;
    Dg.z = 1;
    // - run the Grid of Blocs of threads
    MatrixProductKernel_v1<<<Dg,Db>>>();
    break;
 
  case GK2 : // kernel v2 : 2D kernel using the shared memories
+  //  // - init the grid of blocs
+  //  Db.x = BLOCK_SIZE_XY_K2;
+  //  Db.y = BLOCK_SIZE_XY_K2;
+  //  Db.z = 1;
+  //  Dg.x = SIZE/BLOCK_SIZE_XY_K2;
+  //  Dg.y = SIZE/BLOCK_SIZE_XY_K2;
+  //  Dg.z = 1;
+  //  // - run the Grid of Blocs of threads
+  //  MatrixProductKernel_v2<<<Dg,Db>>>();
    break;
   
  case GK3 : // kernel v3 : 2D kernel using the shared memories with generic matrix size

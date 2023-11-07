@@ -13,9 +13,9 @@
 
 // Matrix size (side of the 3 matrixes)
 // #define SIZE              1024        // To debug
-// #define SIZE              1025        // To debug
-#define SIZE              4096        // To benchmark
-//#define SIZE              4097        // To debug
+#define SIZE              1025        // To debug
+// #define SIZE              4096        // To benchmark
+// #define SIZE              4097        // To debug
 
 
 // Constants for run configurations
@@ -26,10 +26,14 @@
 
 // Block sizes
 #define BLOCK_SIZE_X_K0     32
-#define BLOCK_SIZE_X_K1     1024
-#define BLOCK_SIZE_Y_K1     512
+
+#define BLOCK_SIZE_X_K1     64
+#define BLOCK_SIZE_Y_K1     16
+
 #define BLOCK_SIZE_XY_K2    32
+
 #define BLOCK_SIZE_XY_K3    32
+
 
 #define BLOCK_SIZE_XY_KT0   32
 #define BLOCK_SIZE_XY_KT1   32
