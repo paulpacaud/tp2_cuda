@@ -163,8 +163,7 @@ __global__ void MatrixProductKernel_v2(void)
   __shared__ T_real shared_A_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
   __shared__ T_real shared_B_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
   __shared__ T_real shared_C_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
-  memset(shared_C_block, 0, sizeof(T_real)*BLOCK_SIZE_XY_K2*BLOCK_SIZE_XY_K2);
-
+  shared_C_block[threadIdx.y][threadIdx.x] = 0;
   
   // Matrix product computation
   for (int step = 0; step < nbSteps; step++) {
