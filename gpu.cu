@@ -146,15 +146,16 @@ __global__ void MatrixProductKernel_v1(void)
 /*-------------------------------------------------------------------------------*/
 __global__ void MatrixProductKernel_v2(void)
 {
-  //Declaration of variables in Shared Memory
-  __shared__ float shA[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
-  __shared__ float shB[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
-  __shared__ float shC[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
+  int NbStep = gridDim.x;
 
-  // Index computations
   int row = blockIdx.y*BLOCK_SIZE_XY_K2 + threadIdx.y;
   int col = blockIdx.x*BLOCK_SIZE_XY_K2 + threadIdx.x;
-  int NbStep = SIZE/BLOCK_SIZE_XY_K2;
+
+  //Declaration of variables in Shared Memory
+  __shared__ T_real shA[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
+  __shared__ T_real shB[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
+  __shared__ T_real shC[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
+  memset(shC, 0, sizeof(T_real)*BLOCK_SIZE_XY_K2*BLOCK_SIZE_XY_K2);
 
   //Computation loop (with synchronizations)
   for (int k = 0; k < NbStep; k++) {
@@ -191,7 +192,7 @@ __global__ void MatrixProductKernel_v2(void)
   // en TD5, on a réussi à diviser par BSXY
 
 /*-------------------------------------------------------------------------------*/
-/* Kernel K2                                                                     */
+/* Kernel K3                                                                     */
 /*-------------------------------------------------------------------------------*/
 __global__ void MatrixProductKernel_v3(void)
 {
