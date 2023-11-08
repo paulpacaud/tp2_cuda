@@ -159,8 +159,8 @@ __global__ void MatrixProductKernel_v2(void)
   //Computation loop (with synchronizations)
   for (int k = 0; k < NbStep; k++) {
     //Caching of data
-    shA[threadIdx.y][threadIdx.x] = A[row][k*BLOCK_SIZE_XY_K2 + threadIdx.x] 
-    shB[threadIdx.y][threadIdx.x] = B[k*BLOCK_SIZE_XY_K2 + threadIdx.y][col]
+    shA[threadIdx.y][threadIdx.x] = GPU_A[row][k*BLOCK_SIZE_XY_K2 + threadIdx.x];
+    shB[threadIdx.y][threadIdx.x] = GPU_B[k*BLOCK_SIZE_XY_K2 + threadIdx.y][col];
 
     //Synchronization
     __syncthreads();
@@ -208,17 +208,17 @@ __global__ void MatrixProductKernel_v3(void)
   //Computation loop (with synchronizations)
   for (int k = 0; k < NbStep; k++) {
     //Caching of data
-    if (row < N && k*BLOCK_SIZE_XY_K2 + threadIdx.x < N)
-      shA[threadIdx.y][threadIdx.x] = A[row][k*BLOCK_SIZE_XY_K2 + threadIdx.x] // !
+    if (row < SIZE && k*BLOCK_SIZE_XY_K2 + threadIdx.x < SIZE)
+      shA[threadIdx.y][threadIdx.x] = GPU_A[row][k*BLOCK_SIZE_XY_K2 + threadIdx.x]; // !
     else
-      shA[threadIdx.y][threadIdx.x] = 0
-    if (col < N && k*BLOCK_SIZE_XY_K2 + threadIdx.y < N)
-      shB[threadIdx.y][threadIdx.x] = B[k*BLOCK_SIZE_XY_K2 + threadIdx.y][col] // !
+      shA[threadIdx.y][threadIdx.x] = 0;
+    if (col < SIZE && k*BLOCK_SIZE_XY_K2 + threadIdx.y < SIZE)
+      shB[threadIdx.y][threadIdx.x] = GPU_B[k*BLOCK_SIZE_XY_K2 + threadIdx.y][col]; // !
     else
-      shB[threadIdx.y][threadIdx.x] = 0
+      shB[threadIdx.y][threadIdx.x] = 0;
     //Synchronization
     __syncthreads();
-    if (row < N && col < N) {
+    if (row < SIZE && col < SIZE) {
         //Computation of shared C
         for (int l=0; l< BLOCK_SIZE_XY_K2; l++) { // !
           shC[threadIdx.y][threadIdx.x] = shA[threadIdx.y][l] * shB[l][threadIdx.x];
@@ -230,7 +230,7 @@ __global__ void MatrixProductKernel_v3(void)
     __syncthreads();
   }
 
-  if (row < N && col < N) {
+  if (row < SIZE && col < SIZE) {
     //Storing results in global memory
     GPU_C[row][col] = shC[threadIdx.y][threadIdx.x]; // !
   }
