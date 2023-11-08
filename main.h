@@ -12,9 +12,9 @@
 /*-------------------------------------------------------------------------------*/
 
 // Matrix size (side of the 3 matrixes)
-#define SIZE              1024        // To debug
+// #define SIZE              1024        // To debug
 // #define SIZE              1025        // To debug
-// #define SIZE              4096        // To benchmark
+#define SIZE              4096        // To benchmark
 // #define SIZE              4097        // To debug
 
 
