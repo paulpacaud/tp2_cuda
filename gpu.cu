@@ -164,10 +164,6 @@ __global__ void MatrixProductKernel_v2(void)
   __shared__ T_real shared_B_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
   __shared__ T_real shared_C_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
   shared_C_block[threadIdx.y][threadIdx.x] = 0;
-<<<<<<< HEAD
-
-=======
->>>>>>> f6677404b98f5ea4f868b862a629c08771875253
   
   // Matrix product computation
   for (int step = 0; step < nbSteps; step++) {
