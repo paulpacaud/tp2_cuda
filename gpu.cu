@@ -163,7 +163,7 @@ __global__ void MatrixProductKernel_v2(void)
   __shared__ T_real shared_A_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
   __shared__ T_real shared_B_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
   __shared__ T_real shared_C_block[BLOCK_SIZE_XY_K2][BLOCK_SIZE_XY_K2];
-  memset(shared_C_block, 0, sizeof(T_real)*BLOCK_SIZE_XY_K2*BLOCK_SIZE_XY_K2);
+  shared_C_block[threadIdx.y][threadIdx.x] = 0;
 
   
   // Matrix product computation
@@ -216,6 +216,95 @@ __global__ void MatrixProductKernel_v3(void)
     // Partial matrix product
     if (row < SIZE && col < SIZE) {
       for (int k = 0; k < BLOCK_SIZE_XY_K3; k++) {
+        shared_C_block[threadIdx.y][threadIdx.x] += shared_A_block[threadIdx.y][k] * shared_B_block[k][threadIdx.x];
+      }
+    }
+    __syncthreads();
+  }
+
+  if (row < SIZE && col < SIZE) {
+    //Storing results in global memory
+    GPU_C[row][col] = shared_C_block[threadIdx.y][threadIdx.x];
+  }
+}
+
+__global__ void MatrixProductKernel_v3_2(void)
+{
+  int nbSteps = gridDim.x;
+  int row = blockIdx.y*BLOCK_SIZE_XY_K3 + threadIdx.y;
+  int col = blockIdx.x*BLOCK_SIZE_XY_K3 + threadIdx.x;
+
+  // Shared memory arrays
+  __shared__ T_real shared_A_block[BLOCK_SIZE_XY_K3][BLOCK_SIZE_XY_K3];
+  __shared__ T_real shared_B_block[BLOCK_SIZE_XY_K3][BLOCK_SIZE_XY_K3];
+  __shared__ T_real shared_C_block[BLOCK_SIZE_XY_K3][BLOCK_SIZE_XY_K3];
+  shared_C_block[threadIdx.y][threadIdx.x] = 0;
+
+  // Matrix product computation
+  for (int step = 0; step < nbSteps; step++) {
+    int start = step * BLOCK_SIZE_XY_K3;
+
+    // RAM to shared memory
+    if (row < SIZE && (start + threadIdx.x < SIZE))
+      shared_A_block[threadIdx.y][threadIdx.x] = GPU_A[row][start + threadIdx.x];
+    // else
+    //   shared_A_block[threadIdx.y][threadIdx.x] = 0;
+    
+    if (col < SIZE && (start + threadIdx.y < SIZE))
+      shared_B_block[threadIdx.y][threadIdx.x] = GPU_B[start + threadIdx.y][col];
+    // else
+    //   shared_B_block[threadIdx.y][threadIdx.x] = 0;
+    __syncthreads();
+
+    // Partial matrix product
+    if (row < SIZE && col < SIZE) {
+      for (int k = 0; k < BLOCK_SIZE_XY_K3; k++) {
+        if (k + start < SIZE)
+          shared_C_block[threadIdx.y][threadIdx.x] += shared_A_block[threadIdx.y][k] * shared_B_block[k][threadIdx.x];
+      }
+    }
+    __syncthreads();
+  }
+
+  if (row < SIZE && col < SIZE) {
+    //Storing results in global memory
+    GPU_C[row][col] = shared_C_block[threadIdx.y][threadIdx.x];
+  }
+}
+
+__global__ void MatrixProductKernel_v3_3(void)
+{
+  int nbSteps = gridDim.x;
+  int row = blockIdx.y*BLOCK_SIZE_XY_K3 + threadIdx.y;
+  int col = blockIdx.x*BLOCK_SIZE_XY_K3 + threadIdx.x;
+
+  // Shared memory arrays
+  __shared__ T_real shared_A_block[BLOCK_SIZE_XY_K3][BLOCK_SIZE_XY_K3];
+  __shared__ T_real shared_B_block[BLOCK_SIZE_XY_K3][BLOCK_SIZE_XY_K3];
+  __shared__ T_real shared_C_block[BLOCK_SIZE_XY_K3][BLOCK_SIZE_XY_K3];
+  shared_C_block[threadIdx.y][threadIdx.x] = 0;
+
+  // Matrix product computation
+  for (int step = 0; step < nbSteps; step++) {
+    int start = step * BLOCK_SIZE_XY_K3;
+
+    // RAM to shared memory
+    if (row < SIZE && (start + threadIdx.x < SIZE))
+      shared_A_block[threadIdx.y][threadIdx.x] = GPU_A[row][start + threadIdx.x];
+    // else
+    //   shared_A_block[threadIdx.y][threadIdx.x] = 0;
+    
+    if (col < SIZE && (start + threadIdx.y < SIZE))
+      shared_B_block[threadIdx.y][threadIdx.x] = GPU_B[start + threadIdx.y][col];
+    // else
+    //   shared_B_block[threadIdx.y][threadIdx.x] = 0;
+    __syncthreads();
+
+    // Partial matrix product
+    if (row < SIZE && col < SIZE) {
+      for (int k = 0; k < BLOCK_SIZE_XY_K3; k++) {
+        if (k + start >= SIZE)
+          break;
         shared_C_block[threadIdx.y][threadIdx.x] += shared_A_block[threadIdx.y][k] * shared_B_block[k][threadIdx.x];
       }
     }
