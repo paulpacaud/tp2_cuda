@@ -12,8 +12,8 @@ RESULTS_T_MP="results_T_MP.txt"
 cp main.h main.h.bak
 
 # Loop for X and Y as per your requirement
-for ((Y=1; Y<=4; Y*=2)); do  # Assuming you want to double X in each iteration for quicker traversal
-    for ((X=1; X*Y<=4; X*=2)); do  # Assuming you want to double Y in each iteration for quicker traversal
+for ((Y=1; Y<=1024; Y*=2)); do  # Assuming you want to double X in each iteration for quicker traversal
+    for ((X=1; X*Y<=1024; X*=2)); do  # Assuming you want to double Y in each iteration for quicker traversal
 
         # Output X and Y values
         echo "X: $X, Y: $Y"
