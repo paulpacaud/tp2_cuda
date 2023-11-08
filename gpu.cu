@@ -187,19 +187,46 @@ __global__ void MatrixProductKernel_v2(void)
 /*-------------------------------------------------------------------------------*/
 /* Shared memory caching - 2D & generic matrix size                              */
 /*-------------------------------------------------------------------------------*/
-// __global__ void MatrixProductKernel_v3(void)
-// {
-//   // Index computations
-//   int row = blockIdx.y*BLOCK_SIZE_Y_K1 + threadIdx.y;
-//   int col = blockIdx.x*BLOCK_SIZE_X_K1 + threadIdx.x;
-//   T_real res = 0.0;
+__global__ void MatrixProductKernel_v3(void)
+{
+  int nbSteps = gridDim.x;
+  int row = blockIdx.y*BLOCK_SIZE_XY_K3 + threadIdx.y;
+  int col = blockIdx.x*BLOCK_SIZE_XY_K3 + threadIdx.x;
 
-//   // Matrix product computation
-//   for (int k = 0; k < SIZE; k++) {
-//     res += GPU_A[row][k] * GPU_B[k][col];
-//   }
-//   GPU_C[row][col] = res;
-// }
+  // Shared memory arrays
+  __shared__ T_real shared_A_block[BLOCK_SIZE_XY_K3][BLOCK_SIZE_XY_K3];
+  __shared__ T_real shared_B_block[BLOCK_SIZE_XY_K3][BLOCK_SIZE_XY_K3];
+  __shared__ T_real shared_C_block[BLOCK_SIZE_XY_K3][BLOCK_SIZE_XY_K3];
+  shared_C_block[threadIdx.y][threadIdx.x] = 0;
+
+  // Matrix product computation
+  for (int step = 0; step < nbSteps; step++) {
+    // RAM to shared memory
+    if (row < SIZE && (step * BLOCK_SIZE_XY_K3 + threadIdx.x < SIZE))
+      shared_A_block[threadIdx.y][threadIdx.x] = GPU_A[row][step * BLOCK_SIZE_XY_K3 + threadIdx.x];
+    else
+      shared_A_block[threadIdx.y][threadIdx.x] = 0;
+    
+    if (col < SIZE && (step * BLOCK_SIZE_XY_K3 + threadIdx.y < SIZE))
+      shared_B_block[threadIdx.y][threadIdx.x] = GPU_B[step * BLOCK_SIZE_XY_K3 + threadIdx.y][col];
+    else
+      shared_B_block[threadIdx.y][threadIdx.x] = 0;
+    __syncthreads();
+
+    // Partial matrix product
+    if (row < SIZE && col < SIZE) {
+      for (int k = 0; k < BLOCK_SIZE_XY_K3; k++) {
+        shared_C_block[threadIdx.y][threadIdx.x] += shared_A_block[threadIdx.y][k] * shared_B_block[k][threadIdx.x];
+      }
+    }
+    __syncthreads();
+  }
+
+  if (row < SIZE && col < SIZE) {
+    //Storing results in global memory
+    GPU_C[row][col] = shared_C_block[threadIdx.y][threadIdx.x];
+  }
+}
 
 
 /*-------------------------------------------------------------------------------*/
@@ -265,6 +292,15 @@ void gpuProduct(gkid_t kid)
    break;
   
  case GK3 : // kernel v3 : 2D kernel using the shared memories with generic matrix size
+    // - init the grid of blocs
+   Db.x = BLOCK_SIZE_XY_K3;
+   Db.y = BLOCK_SIZE_XY_K3;
+   Db.z = 1;
+   Dg.x = (SIZE - 1)/BLOCK_SIZE_XY_K3 + 1;
+   Dg.y = (SIZE - 1)/BLOCK_SIZE_XY_K3 + 1;
+   Dg.z = 1;
+   // - run the Grid of Blocs of threads
+   MatrixProductKernel_v3<<<Dg,Db>>>();
    break;
 
  case GK4 : // calling cublas gemm & user-defined transpose kernel
